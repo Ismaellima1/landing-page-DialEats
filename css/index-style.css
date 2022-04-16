@@ -1,0 +1,164 @@
+/* Importações */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* font-family: 'Montserrat', sans-serif; */
+
+/* Reset CSS */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* Pseudo Raiz do Documento HTML */
+:root {
+  --Font-family-princ: Montserrat;
+}
+
+/* body CSS */
+body {
+}
+
+/* header CSS */
+header {
+  width: auto;
+  height: 600px;
+  background-image: url(../assets/imgs/imagem-background-header.svg);
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+/* Class Cabecalho */
+.cabecalho {
+  max-width: 1240px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.logo-privacy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+/* Logo Header */
+.logo img {
+  width: 196px;
+}
+/* privacy-policy */
+.privacy-policy {
+  color: white;
+  font-family: var(--Font-family-princ);
+  font-size: 9pt;
+  font-weight: 500;
+}
+/* Media Com configurações Funcionais até a largura 1257px */
+@media (max-width: 1257px) {
+  .cabecalho {
+    width: auto;
+    margin: 0 30px;
+  }
+}
+/* @media (max-width: 1257px) {
+    .logo img {
+        position: relative;
+        left: 20px;
+    }
+    .privacy-policy {
+        position: relative;
+        right: 20px;
+    }
+} */
+
+.content-dawnload-img-celular {
+  display: flex;
+  margin-top: 200px;
+}
+/* texto dawnload */
+.content-dawnload {
+  width: 578px;
+  color: white;
+  font-family: var(--Font-family-princ);
+}
+.content-dawnload h1 {
+  font-size: 30pt;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+.content-dawnload p {
+  font-size: 12.6pt;
+  margin-bottom: 30px;
+}
+/* Botão */
+.buttons-Dawnload-apps {
+  display: flex;
+  gap: 15px;
+  text-decoration: none;
+}
+.Button-app-store,
+.Button-google-play {
+  text-decoration: none;
+  width: 220px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid white;
+  border-radius: 40px;
+  padding: 10px;
+}
+.Button-app-store img,
+.Button-app-store span,
+.Button-app-store h2,
+.Button-google-play img,
+.Button-google-play span,
+.Button-google-play h2 {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  left: 5px;
+}
+.Button-app-store img,
+.Button-google-play img {
+  width: 35px;
+}
+.Button-app-store-text span,
+.Button-google-play-text span {
+  font-size: 11pt;
+}
+.Button-app-store-text h2,
+.Button-google-play-text h2 {
+  font-size: 13pt;
+  width: 120px;
+}
+.Button-app-store {
+  background-color: red;
+  border: 1px solid red;
+}
+.img-celular img{
+  position: relative;
+  bottom: 250px;
+  right: 23px;
+  width: 640px;
+}
+
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 5rem);
+  grid-column-gap: 1rem;
+  width: 23.1rem;
+  background-color: darkorchid;
+  align-self: center;
+}
+.card {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.2rem;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

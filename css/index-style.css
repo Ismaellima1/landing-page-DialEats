@@ -15,8 +15,8 @@
 }
 
 /* body CSS */
-body { 
-
+body {
+  width: auto;
 }
 
 
@@ -144,25 +144,105 @@ header {
 
 main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   height: 2000px;
-  width: 100%;
+  width: auto;
 }
 
 
 .container-cards {
   display: grid;
-  grid-template-columns: repeat(4, 272px);
-  grid-gap: 0 20px;
-  align-items: end;
-  justify-content: center;
-  max-width: 1240px;
-  height: 462px;
-  background-color: darkorchid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0 35px;
+  width: 1240px;
+  height: 320px;
+  margin-top: 140px;
+  font-family: var(--Font-family-princ);
+  z-index: 10;
+}
+.container-cards a {
+  text-decoration: none;
 }
 .card {
-  background-color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 15px;
   height: 320px;
 }
+
+
+.card h2 {
+  position: relative;
+  bottom: 25px;
+  color: rgba(255, 255, 255, 0.767);
+}
+
+/* cards background img */
+
+.card-Harare-img {
+  background-image: 
+  linear-gradient(to top, black, transparent), 
+  url('../assets/imgs/card-Harare-img.svg');
+}
+.card-Harare-img:hover {
+  animation-name: cardHarare;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes cardHarare {
+  0% {width: 300px}
+  100% {width: 320px}
+}
+
+.card-Bulawayo-img {
+  background-image: 
+  linear-gradient(to top, black, transparent),
+  url('../assets/imgs/card-Bulawayo-img.svg');
+}
+.card-Bulawayo-img:hover {
+  animation-name: cardBulawayo;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes cardBulawayo {
+  0% {width: 300px}
+  100% {width: 320px}
+}
+
+.card-Mutare-img {
+  background-image: 
+  linear-gradient(to top, black, transparent),
+  url('../assets/imgs/card-Mutare-img.svg');
+}
+.card-Mutare-img:hover {
+  animation-name: Mutare;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes Mutare {
+  0% {width: 300px}
+  100% {width: 320px}
+}
+
+.card-Chinhoyi-img {
+  background-image: 
+  linear-gradient(to top, black, transparent),
+  url('../assets/imgs/card-Chinhoyi-img.svg');
+}
+.card-Chinhoyi-img:hover {
+  animation-name: cardChinhoyi;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes cardChinhoyi {
+  0% {width: 300px}
+  100% {width: 320px}
+}
+
+
 

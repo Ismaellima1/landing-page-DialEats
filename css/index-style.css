@@ -17,6 +17,7 @@
 /* body CSS */
 body {
   width: auto;
+  overflow-x: hidden;
 }
 
 
@@ -144,8 +145,9 @@ header {
 
 main {
   display: flex;
-  justify-content: center;
-  height: 2000px;
+  flex-direction: column;
+  align-items: center;
+  height: 2533px;
   width: auto;
 }
 
@@ -244,5 +246,142 @@ main {
   100% {width: 320px}
 }
 
+/* parte how works dos apps */
+.container-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
 
+}
+.How-app-works {
+  position: relative;
+  width: 730px;
+  font-family: var(--Font-family-princ);
+}
 
+.How-app-works>h2 {
+  position: relative;
+  left: 70px;
+  width: 630px;
+  text-align: center;
+  margin: 40px 0;
+  padding: 40px 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.178);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.app-works-content {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.app-content {
+  display: flex;
+  justify-content: space-between;
+}
+.app-content-right {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.app-content, .app-content-right {
+  display: flex;
+  align-items: center;
+}
+.app-text {
+  max-width: 350px;
+}
+.app-text h3,.app-text h2,.app-text p {
+  margin: 20px 0;
+}
+.app-text h3{
+  color: #FF0000;
+}
+.app-text h2 {
+  color: #252B42;
+}
+.app-text p {
+  color: #737373;
+}
+
+.app-content img,.app-content-right img{
+  width: 200px;
+}
+
+/* Circulos para dar um efeito junto ao how works apps*/
+.circle-1,.circle-2 {
+  background: linear-gradient(#ff00004f, #ff000015, #ff000000);
+  border-radius: 50%;
+}
+.circle-1 {
+  position: absolute;
+  float: left;
+  top: 1750px;
+  left: -650px;
+  width: 800px;
+  height: 800px;
+}
+.circle-2 {
+  position: absolute;
+  float: right;
+  top: 1100px;
+  right: -650px;
+  width: 800px;
+  height: 800px;
+}
+
+/* What others comentarios */
+.What-others {
+  height: 509px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--Font-family-princ);
+  width: auto;
+}
+.What-others>h2 {
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.178);
+  width: 600px;
+  margin: 60px 0 20px 0;
+  padding: 40px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.cards-comentario {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: repeat(1, 320px);
+  grid-gap: 0 40px;
+}
+.card-cm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  padding: 20px;
+  color: #737373;
+}
+.perfil-user-cm {
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  align-items: center;
+}
+.perfil-user-cm img {
+  width: 50px;
+}
+.perfil-user-cm h2 {
+  color:#FF0000;
+  font-size: 13pt;
+}
+.perfil-user-cm h3 {
+  color: #737373;
+  font-size: 10pt;
+}
+
+/* contact Us */
+.contactUs {
+  height: 400px;
+  background-color: red;
+}
